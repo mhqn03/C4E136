@@ -13,5 +13,5 @@ function send() {
     } else {
         document.write('nghiện');
     }
-    
+    return;
 }
