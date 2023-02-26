@@ -9,7 +9,7 @@ input {
     border-radius: 8px;
     border-color: #c42d2d7d;
 }
-#submit {
+#submit, #return {
     color: red;
     background-color: #c42d2d7d;
     width: 5rem;
@@ -17,10 +17,10 @@ input {
     border-radius: 10px;
     margin-top: 10px;
 }
-#submit:hover {
+#submit:hover, #return:hover {
     cursor: pointer;
 }
-#submit:active {
+#submit:active, #return:active {
     background-color: aliceblue;
 
 }
