@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    background-color: aliceblue;
+    display: block;
+}
+p{
+    opacity: 0.8;
+}
+.header{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.btn-header2{
+    border: none;
+}
+.btn-header2:hover{
+    opacity: 0.7;
+}
+.btn-header2:active{
+    color: rgb(85, 76, 76);
+}
+.content {
+    width: 300px;
+    display: inline-block;
+}
+input {
+    padding: 5px;
+}
+label {
+    font-size: 15px; 
+    opacity: 0.8;
+}
+.label-1>input {
+    width: 90px;
+}
+select {
+    padding: 3px 50px 3px 0;
+}
+label>a {
+    color: rgb(36, 35, 35); 
+}
+
+a {
+    text-decoration: none;
+}
+a:active {
+    color:rgb(169, 137, 137);
+}
+button.footer-btn {
+    background-color: rgb(28, 206, 28);
+    border: 1px solid green;
+    color: white;
+    font-size: larger;
+    padding: 5px 50px;
+    border-radius: 5px;
+}
+button.footer-btn:hover {
+    opacity: 0.8;
+}
+button.footer-btn:active {
+    color: rgb(177, 145, 145);
+}
+.footer {
+    width: 400px;
+}

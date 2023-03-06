@@ -4,6 +4,7 @@ function send() {
     let x = w/(h*h);
     document.getElementById('submit').innerHTML = x.toFixed(2);
     {
+        
         document.write('chỉ số bmi của bạn là: ',x.toFixed(2),', và bạn: ');
         if(x>=30){
             document.write('béo đét');
