@@ -17,7 +17,7 @@ ul.appendChild(li)
 
 for(let i=0; i<listImages.length; i++){
     const img = document.createElement('img')
-    // img.src = listImages[i];
+    img.src = listImages[i];
     li.appendChild(img);
 }
 // tương tác với event
@@ -25,12 +25,12 @@ testJS.addEventListener('click', function (){
     testJS.style.background = 'red'
 });
 
-const form = document.getElementById('form')
-const htmlInput = document.createElement('input')
-htmlInput.type = 'text'
-form.appendChild(htmlInput)
-htmlInput.addEventListener('', function(event) {
-    // event.preventDefault();
-    console.log(event);
+// const form = document.getElementById('form')
+// const htmlInput = document.createElement('input')
+// htmlInput.type = 'text'
+// form.appendChild(htmlInput)
+// htmlInput.addEventListener('', function(event) {
+//     // event.preventDefault();
+//     console.log(event);
     
-})
+// })

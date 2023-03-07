@@ -9,10 +9,8 @@ const inputEmail = document.getElementById('email')
 inputEmail.addEventListener('change', () => {
     const isEmail = validateEmail(inputEmail.value)
     if(!isEmail){
-        inputEmail.parentElement.classList.add('invalid')
         errorEmail.innerText = 'không đúng định dạng email'
     } else {
-        inputEmail.parentElement.classList.remove('invalid')
         errorEmail.innerText = ''
     }
 })
@@ -34,4 +32,8 @@ inputConfirmPassword.addEventListener('change', () => {
     } else {
         errorConfirmPassword.innerText = 'Password khong trung khop'
     }
+})
+const submit = document.getElementById('submit')
+submit.addEventListener('click', () => {
+    console.log('day la button');
 })
