@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form {
+    margin: 50px;
+    width: 500px;
+    height: auto;
+    border: 1px solid rgb(239, 238, 238);
+    background-color: #24a0b0c5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#email, #password, #confirmPassword, .submit {
+    margin: 15px 0;
+    width: 300px;
+    /* height: 30px; */
+    
+}
+#logged {
+    margin: 0 auto 10px;
+}
+div a {
+    color: #fff;
+    text-decoration: none;
+
+}
+div a:hover {
+    opacity: 0.8;
+}
+.submit.creatAccount {
+    width: 150px;
+}
+.submit {
+    width: 120px;
+    margin: 0 auto 15px;
+    text-transform: uppercase;
+    background-color:#cd7a7a;
+    border-radius: 5px;
+}
+.submit:active {
+   background-color: #be6666;
+}

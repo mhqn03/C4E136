@@ -1,15 +1,18 @@
 const validateEmail = (email) => {
 // định dạng email
-    return email.match(
-        /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,})+$/
-    )
+        return email.match(
+            /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{3})+$/
+        )
+    // else if() {
+    //     return 
+    // }
 }
 const errorEmail = document.getElementById('error-email')
 const inputEmail = document.getElementById('email')
 inputEmail.addEventListener('change', () => {
     const isEmail = validateEmail(inputEmail.value)
     if(!isEmail){
-        errorEmail.innerText = 'không đúng định dạng email'
+        errorEmail.innerText = 'không đúng định dạng'
     } else {
         errorEmail.innerText = ''
     }
@@ -33,7 +36,12 @@ inputConfirmPassword.addEventListener('change', () => {
         errorConfirmPassword.innerText = 'Password khong trung khop'
     }
 })
+
 const submit = document.getElementById('submit')
 submit.addEventListener('click', () => {
-    console.log(inputEmail.value);
+    localStorage.setItem('username', inputEmail.value)
+    localStorage.setItem('password', inputConfirmPassword.value)
 })
+
+
+
